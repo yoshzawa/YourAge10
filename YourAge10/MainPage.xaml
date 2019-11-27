@@ -8,9 +8,15 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        <Label Text="現在の年齢を入力してください"
+           x:Name="lbl"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+        <StackLayout HorizontalOptions="CenterAndExpand" 
+                     VerticalOptions="CenterAndExpand">
+            <Entry x:Name="tBox" />
+            <Button Text="計算" Clicked="Button_Clicked"/>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>

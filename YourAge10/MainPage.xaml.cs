@@ -17,5 +17,12 @@ namespace YourAge10
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            string s = tBox.Text;
+            int age = int.Parse(s)+1;
+            lbl.Text = "来年は" + age + "歳です";
+        }
     }
 }
